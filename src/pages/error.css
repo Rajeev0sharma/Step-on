@@ -1,0 +1,76 @@
+/* ================= Error Page ================= */
+.error-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Image */
+.error-page figure {
+  max-width: 420px;
+  margin-bottom: 1.5rem;
+}
+
+.error-page img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Text */
+.error-page p {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+/* Back Home Button */
+.error-page a {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.error-page a:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(29, 78, 216, 0.3);
+}
+.error-page button {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.error-page button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(29, 78, 216, 0.3);
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 768px) {
+  .error-page p {
+    font-size: 1rem;
+  }
+
+  .error-page figure {
+    max-width: 300px;
+  }
+}

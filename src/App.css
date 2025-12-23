@@ -1,0 +1,355 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* main header wrapper */
+.setion-navbar {
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  
+}
+
+/* top small bar */
+.top_txt {
+  background-color: #111827;
+  color: #f9fafb;
+  font-size: 0.85rem;
+  padding: 4px;
+}
+
+.top_txt_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top_auth_links a {
+  color: #f9fafb;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.top_auth_links a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Main Navbar ================= */
+.main_navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Inner Container */
+.navbar_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================= Logo ================= */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* ================= Nav List ================= */
+.navbar_inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_inner li {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+/* ================= Nav Links ================= */
+.nav-link {
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #111827;
+}
+
+/* Active link */
+.nav-link.active {
+  color: #1d4ed8;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #1d4ed8;
+  border-radius: 999px;
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 768px) {
+  .navbar_inner {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .logo-container img {
+    height: 34px;
+  }
+
+  .navbar_inner li {
+    gap: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* main footer wrapper */
+.footer {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding-top: 2.5rem;
+  margin-top: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* container: three columns */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* brand section */
+.footer-brand h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #f9fafb;
+}
+
+.footer-brand p {
+  max-width: 260px;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* common column titles */
+.footer-links h3,
+.footer-social h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: #e5e7eb;
+}
+
+/* lists */
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+  margin-bottom: 0.4rem;
+}
+
+/* links */
+.footer-links a,
+.footer-social a {
+  text-decoration: none;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #facc15;
+  transform: translateX(2px);
+}
+
+.footer-social a:hover {
+  color: #38bdf8;
+  transform: translateY(-1px);
+}
+
+/* bottom strip */
+.footer-bottom {
+  border-top: 1px solid #1f2937;
+  padding: 0.9rem 1rem 1.1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* center text on small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social {
+    width: 100%;
+  }
+}
+
+.navlink-contanier {
+  text-decoration: none;      
+  color: inherit;            
+  display: block;             
+}
+
+.navlink-contanier .shoe-card,
+.navlink-contanier .shoe-card * {
+  color: inherit;
+}
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+/* grid for list of shoes */
+.shoe-card-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* single card */
+.shoe-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* image */
+.shoe-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.shoe-card-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.shoe-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+/* old MRP with line */
+.shoe-card-old {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-decoration: line-through; /* adds the line */
+}
+
+/* current price highlighted */
+.shoe-card-current {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #a31635; /* green highlight */
+}
+.checkout-btn{
+    border-radius: 999px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+
+/* ================= Loader Section ================= */
+.loader-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= Spinner ================= */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e7eb;        /* light gray */
+  border-top: 5px solid #1d4ed8;    /* primary color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* ================= Animation ================= */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

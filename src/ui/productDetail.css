@@ -1,0 +1,138 @@
+.product-detail {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* two-column card: left image, right details */
+.product-detail-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  padding: 1.5rem;
+}
+
+/* LEFT column */
+.product-detail-image {
+  flex: 1 1 320px;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #eff6ff, #f9fafb);
+  border-radius: 12px;
+}
+
+.product-detail-image img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* RIGHT column */
+.product-detail-info {
+  flex: 1 1 320px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pd-brand {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6b7280;
+}
+
+.pd-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* price row */
+.pd-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.pd-old {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.pd-current {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* sizes */
+.pd-sizes {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.pd-sizes span {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.8rem;
+}
+
+/* description */
+.pd-desc {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* buttons */
+.pd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.pd-btn {
+  border-radius: 999px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pd-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #f9fafb;
+}
+
+.pd-secondary {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* stack on small screens */
+@media (max-width: 768px) {
+  .product-detail-card {
+    padding: 1.1rem;
+  }
+
+  .pd-name {
+    font-size: 1.3rem;
+  }
+}

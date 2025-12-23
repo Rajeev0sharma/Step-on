@@ -1,0 +1,111 @@
+/* ================= Page Layout ================= */
+.signin-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e8f1f8, #f8fafc);
+  padding: 1rem;
+}
+
+/* ================= Card ================= */
+.signin-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* Headings */
+.signin-card h1 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 0.3rem;
+}
+
+.signin-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+/* ================= Form ================= */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signin-form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Inputs */
+.signin-form input {
+  margin-top: 0.4rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.9rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signin-form input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
+
+/* Extra links */
+.signin-extra {
+  text-align: right;
+  margin-top: -0.5rem;
+}
+
+.forgot-link {
+  font-size: 0.85rem;
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= Button ================= */
+.signin-btn {
+  margin-top: 1.2rem;
+  padding: 0.85rem;
+  border-radius: 999px;
+  border: none;
+  background: #1e3a8a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signin-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(30, 58, 138, 0.35);
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 480px) {
+  .signin-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .signin-card h1 {
+    font-size: 1.7rem;
+  }
+}
