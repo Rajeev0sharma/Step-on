@@ -10,6 +10,7 @@ import { ProductDetail } from "./ui/ProductDetail"
 import { SignUp, signUpData } from "./pages/SignUp"
 import { SignIn, signInData } from "./pages/SignIn"
 import { ErrorPage } from "./pages/ErrorPage"
+import { NikeProducts } from "./pages/Nike"
 
 
 const App=()=>{
@@ -59,6 +60,10 @@ const router=createBrowserRouter([
     element:<SignUp/>,
      action:signUpData,
    
+  }
+  {
+    path:"/nike",
+    element:<NikeProducts/>
   }
       ]
     
