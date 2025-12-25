@@ -60,7 +60,7 @@ const router=createBrowserRouter([
     element:<SignUp/>,
      action:signUpData,
    
-  }
+  },
   {
     path:"/nike",
     element:<NikeProducts/>
