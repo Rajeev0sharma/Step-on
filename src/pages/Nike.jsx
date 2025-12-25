@@ -1,7 +1,9 @@
 export const NikeProducts=()=>{
     return(
         <div>
-            <h1>Nike Products Page</h1>
+            <figure>
+                <img src="/image/brands/nike-svg.svg" alt="nike page" />
+            </figure>
         </div>
     )   
 }
