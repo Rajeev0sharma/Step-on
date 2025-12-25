@@ -11,6 +11,12 @@ import { SignUp, signUpData } from "./pages/SignUp"
 import { SignIn, signInData } from "./pages/SignIn"
 import { ErrorPage } from "./pages/ErrorPage"
 import { NikeProducts } from "./pages/Nike"
+import { NikeJordonProducts } from "./pages/NikeJordonProduct"
+import { AscisProducts } from "./pages/AsicsProduct"
+import { PumaProduct } from "./pages/PumaProduct"
+import { AdidasProducts } from "./pages/AdidasProduct"
+import { RedTapeProducts } from "./pages/RedTapeProduct"
+import { SkechersProduct } from "./pages/SkechersProduct"
 
 
 const App=()=>{
@@ -64,6 +70,30 @@ const router=createBrowserRouter([
   {
     path:"/nike",
     element:<NikeProducts/>
+  },
+  {
+    path:"/nikejordon",
+    element:<NikeJordonProducts/>
+  },
+  {
+    path:"/ascis",
+    element:<AscisProducts/>
+  },
+  {
+    path:"/puma",
+    element:<PumaProduct/>
+  },
+  {
+    path:"/adidas",
+    element:<AdidasProducts/>
+  },
+  {
+    path:"/redtape",
+    element:<RedTapeProducts/>
+  },
+  {
+    path:"/skechers",
+    element:<SkechersProduct/>
   }
       ]
     
